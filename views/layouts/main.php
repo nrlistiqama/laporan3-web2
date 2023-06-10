@@ -40,25 +40,26 @@ $this->registerLinkTag(['rel' => 'icon', 'type' => 'image/x-icon', 'href' => Yii
         'options' => ['class' => 'navbar-nav'],
         'items' => [
             ['label' => 'Home', 'url' => ['/site/index']],
-            ['label' => 'About', 'url' => ['/site/about']],
-            ['label' => 'Contact', 'url' => ['/site/contact']],
+            ['label' => 'Mahasiswa', 'url' => ['/mhs006/index']],
 
-            ['label' => 'Index', 'url' => ['/daftar-matakuliah/index']],
-            ['label' => 'View', 'url' => ['/daftar-matakuliah/view']],
-            ['label' => 'Update', 'url' => ['/daftar-matakuliah/update']],
-            ['label' => 'Delete', 'url' => ['/daftar-matakuliah/delete']],
-
-            ['label' => 'Profil', 'url' => ['/mahasiswa/profil']],
-            Yii::$app->user->isGuest
-                ? ['label' => 'Login', 'url' => ['/site/login']]
-                : '<li class="nav-item">'
-                    . Html::beginForm(['/site/logout'])
-                    . Html::submitButton(
-                        'Logout (' . Yii::$app->user->identity->username . ')',
-                        ['class' => 'nav-link btn btn-link logout']
-                    )
-                    . Html::endForm()
-                    . '</li>'
+            // ['label' => 'About', 'url' => ['/site/about']],
+            // ['label' => 'Contact', 'url' => ['/site/contact']],
+            // ['label' => 'Index', 'url' => ['/daftar-matakuliah/index']],
+            // ['label' => 'View', 'url' => ['/daftar-matakuliah/view']],
+            // ['label' => 'Update', 'url' => ['/daftar-matakuliah/update']],
+            // ['label' => 'Delete', 'url' => ['/daftar-matakuliah/delete']],
+            // ['label' => 'Profil', 'url' => ['/mahasiswa/profil']],
+            
+            // Yii::$app->user->isGuest
+            //     ? ['label' => 'Login', 'url' => ['/site/login']]
+            //     : '<li class="nav-item">'
+            //         . Html::beginForm(['/site/logout'])
+            //         . Html::submitButton(
+            //             'Logout (' . Yii::$app->user->identity->username . ')',
+            //             ['class' => 'nav-link btn btn-link logout']
+            //         )
+            //         . Html::endForm()
+            //         . '</li>'
         ]
     ]);
     NavBar::end();
